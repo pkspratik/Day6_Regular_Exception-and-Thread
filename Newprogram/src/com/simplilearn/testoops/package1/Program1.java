@@ -1,15 +1,15 @@
-package come.simplilern.package1;
+package com.simplilearn.testoops.package1;
 
 public class Program1 {
 	
-	String name="Pratik";   // instance variable
+	String name="Pratik";
 	
 	//constructor
 	Program1()  // two type of constructor this is Default
 	{
 		//this(5);
 		
-		System.out.println("Constructor excute ");
+		System.out.println("Constructor excute first after create obj");
 		System.out.println(name); // here also this hide 
 	}
 	
@@ -34,17 +34,14 @@ public class Program1 {
 		System.out.println("With this"+"Name => "+this.name); // here i write same 
 	}
 
-	public static void main(String[] args) {
-		//public static void main(String...ps) {    // this is var_arg concept 
+	//public static void main(String[] ps) {
+		public static void main(String...ps) {    // this is var_arg concept 
 		
 		
 		
-		new Program1(8); // 1 object creation   // if i make give here parameter 
+		new Program1(6); // object creation   // if i make give here parameter 
 		
-		//Program1 obj = new Program1();
-		   
 		System.out.println("Main Method");
-		//System.out.println( obj.name );
 		
 		//System.out.println(name); // we can't access instance variable in static area  
 
@@ -52,7 +49,6 @@ public class Program1 {
 	
 	//this is ststic blocak it's excute automatic 
 	static {
-		
 		System.out.println("Static Block");
 	}
 
